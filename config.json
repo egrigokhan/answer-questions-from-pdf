@@ -1,0 +1,19 @@
+{
+   "inputs": [
+     {
+       "key": "pdf_file",
+       "title": "PDF File",
+       "description": "The PDF file to be questioned",
+       "type": "file",
+       "extension": "pdf"
+     },
+     {
+       "key": "OPENAI_API_KEY",
+       "title": "OpenAI API Key",
+       "description": "Your OpenAI API key",
+       "type": "string",
+       "secure": true
+     }
+   ]
+ }
+ 
