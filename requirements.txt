@@ -23,7 +23,6 @@ cryptography==39.0.2
 cycler==0.11.0
 dataclasses-json==0.5.7
 Deprecated==1.2.13
-detectron2==0.6
 effdet==0.3.0
 et-xmlfile==1.1.0
 faiss-cpu==1.7.3
