@@ -18,6 +18,7 @@ from langchain.vectorstores.faiss import FAISS
 from langchain.text_splitter import CharacterTextSplitter
 import pickle
 import os
+from llama_index import download_loader
 
 from langchain.document_loaders import UnstructuredPDFLoader
 from langchain.chains.qa_with_sources import load_qa_with_sources_chain
@@ -57,6 +58,12 @@ def run(msg):
 def setup(config):
     os.environ["OPENAI_API_KEY"] = config["OPENAI_API_KEY"]
     os.environ["pdf_file"] = config["pdf_file"]
+
+    # UnstructuredReader = download_loader("UnstructuredReader")
+
+    # loader = UnstructuredReader()
+    # docs = loader.load_data(file='Personal Information Form.pdf')
+    # print(docs)
 
     loader = UnstructuredPDFLoader(os.environ["pdf_file"])
     docs = loader.load()

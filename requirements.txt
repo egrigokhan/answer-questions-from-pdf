@@ -51,6 +51,7 @@ joblib==1.2.0
 kiwisolver==1.4.4
 langchain==0.0.116
 layoutparser==0.3.4
+llama-index==0.4.32
 lxml==4.9.2
 Markdown==3.4.1
 MarkupSafe==2.1.2
@@ -118,7 +119,6 @@ termcolor==2.2.0
 timm==0.6.12
 tokenizers==0.13.2
 tomli==2.0.1
-torch==2.0.0
 torchvision==0.15.1
 tqdm==4.65.0
 transformers==4.27.1
