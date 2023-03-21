@@ -18,9 +18,8 @@ from langchain.vectorstores.faiss import FAISS
 from langchain.text_splitter import CharacterTextSplitter
 import pickle
 import os
-from llama_index import download_loader
 
-from langchain.document_loaders import UnstructuredPDFLoader
+from langchain.document_loaders import PyPDFLoader
 from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 from langchain.llms import OpenAI
 
@@ -65,7 +64,7 @@ def setup(config):
     # docs = loader.load_data(file='Personal Information Form.pdf')
     # print(docs)
 
-    loader = UnstructuredPDFLoader(os.environ["pdf_file"])
+    loader = PyPDFLoader(os.environ["pdf_file"])
     docs = loader.load()
 
     search_index(docs)
