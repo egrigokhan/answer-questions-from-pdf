@@ -51,8 +51,8 @@ def print_answer(question):
     )["output_text"]
 
 
-def run(msg):
-    return print_answer(msg)
+def run(message, history):
+    return print_answer(message)
 
 def setup(config):
     os.environ["OPENAI_API_KEY"] = config["OPENAI_API_KEY"]
